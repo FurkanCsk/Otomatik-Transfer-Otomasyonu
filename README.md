@@ -26,28 +26,28 @@ Bu proje, **Siemens TIA Portal** ve **S7-PLCSim** kullanılarak geliştirilmiş;
 ### Network 1 & 2: Start/Stop ve Alt Piston İleri Hareketi
 * **TIA Portal Kodu:**
   ![Network 1 ve 2 - Start ve Alt Piston](https://github.com/FurkanCsk/Otomatik-Transfer-Otomasyonu/blob/main/Start%20ve%20%C4%B0leri.png)
-> **Açıklama:** `%I0.0` start sinyaliyle sistem açılır. Ürün tespit sensörü (`%I1.0`) parça gördüğünde, alt piston geri ve asansör aşağıda koşulları sağlanarak alt piston valfi (`%Q0.0`) tetiklenir[cite: 9].
+> **Açıklama:** `%I0.0` start sinyaliyle sistem açılır. Ürün tespit sensörü (`%I1.0`) parça gördüğünde, alt piston geri ve asansör aşağıda koşulları sağlanarak alt piston valfi (`%Q0.0`) tetiklenir.
 
 ---
 
 ### Network 3 & 4: Adım Hafızası (`M1`) ve Asansör Yukarı Hareketi
 * **TIA Portal Kodu:**
   ![Network 3 ve 4 - M1 ve Asansör Yukarı](https://github.com/FurkanCsk/Otomatik-Transfer-Otomasyonu/blob/main/M1%20ve%20Yukar%C4%B1%20Hareket.png)
-> **Açıklama:** Alt piston ileri gidip (`%I0.3`) sinyal verdiğinde `M1` hafızası (`%M10.1`) kaydedilir[cite: 9]. Bu onayla birlikte asansör yukarı valfi (`%Q0.2`) aktifleşerek dikey taşıma başlatılır[cite: 10].
+> **Açıklama:** Alt piston ileri gidip (`%I0.3`) sinyal verdiğinde `M1` hafızası (`%M10.1`) kaydedilir[cite: 9]. Bu onayla birlikte asansör yukarı valfi (`%Q0.2`) aktifleşerek dikey taşıma başlatılır.
 
 ---
 
 ### Network 5 & 6: Üst Piston İleri Hareketi ve Adım Hafızası (`M2`)
 * **TIA Portal Kodu:**
   ![Network 5 ve 6 - Üst Piston ve M2](https://github.com/FurkanCsk/Otomatik-Transfer-Otomasyonu/blob/main/%C3%9Cst%20Piston%20%C4%B0leri%20ve%20M2.png)
-> **Açıklama:** Asansör yukarıda limitine ulaştığında üst piston ileri valfi (`%Q0.1`) tetiklenir[cite: 10]. Piston ileri gittiğinde (`%I0.4`) ikinci adım hafızası olan `M2` (`%M10.2`) set edilir[cite: 10].
+> **Açıklama:** Asansör yukarıda limitine ulaştığında üst piston ileri valfi (`%Q0.1`) tetiklenir[cite: 10]. Piston ileri gittiğinde (`%I0.4`) ikinci adım hafızası olan `M2` (`%M10.2`) set edilir.
 
 ---
 
 ### Network 7: Asansör Aşağı Hareketi (Başlangıç Konumu)
 * **TIA Portal Kodu:**
   ![Network 7 - Asansör Aşağı Dönüş](https://github.com/FurkanCsk/Otomatik-Transfer-Otomasyonu/blob/main/Asans%C3%B6r%20A%C5%9Fa%C4%9F%C4%B1%20Hareket.png)
-> **Açıklama:** `M2` hafızası aktifleştiğinde ve üst piston geri döndüğünde, asansör aşağı valfi (`%Q0.3`) tetiklenerek sistem güvenli bir şekilde başlangıç evine döndürülür[cite: 11].
+> **Açıklama:** `M2` hafızası aktifleştiğinde ve üst piston geri döndüğünde, asansör aşağı valfi (`%Q0.3`) tetiklenerek sistem güvenli bir şekilde başlangıç evine döndürülür.
 
 ---
 
