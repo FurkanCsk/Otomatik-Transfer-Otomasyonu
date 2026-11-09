@@ -5,12 +5,12 @@ Bu proje, **Siemens TIA Portal** ve **S7-PLCSim** kullanılarak geliştirilmiş;
 ---
 
 ## ⚙️ Pnömatik Sistem Mantığı ve Çalışma Senaryosu
-1. **Sistem Başlatılması:** `Start` butonuna basıldığında sistem Set/Reset (SR) bloğu üzerinden aktifleşir[cite: 9].
-2. **Besleme (Alt Piston İleri):** Ürün tespit sensörü parça algıladığında ve mekanik emniyet koşulları sağlandığında alt piston ileri hareket ederek ürünü iter[cite: 9].
-3. **Adım Kaydı (`M1`):** Alt piston görevi tamamlayıp ileri limitine ulaştığında `M1` hafıza biti set edilerek bir sonraki aşamaya geçilir[cite: 9].
-4. **Dikey Taşıma (Asansör Yukarı):** `M1` onayıyla birlikte asansör mekanizması ürünü yukarı taşır[cite: 10].
-5. **Transfer (Üst Piston İleri):** Asansör üst konuma ulaştığında üst piston devreye girerek parçayı transfer eder[cite: 10].
-6. **İkinci Adım Kaydı (`M2`) ve Evine Dönüş:** Üst piston hareketini tamamlayıp `M2` hafızasını aktif ettiğinde, asansör aşağı inerek sistemi başlangıç pozisyonuna döndürür[cite: 10, 11].
+1. **Sistem Başlatılması:** `Start` butonuna basıldığında sistem Set/Reset (SR) bloğu üzerinden aktifleşir.
+2. **Besleme (Alt Piston İleri):** Ürün tespit sensörü parça algıladığında ve mekanik emniyet koşulları sağlandığında alt piston ileri hareket ederek ürünü iter.
+3. **Adım Kaydı (`M1`):** Alt piston görevi tamamlayıp ileri limitine ulaştığında `M1` hafıza biti set edilerek bir sonraki aşamaya geçilir.
+4. **Dikey Taşıma (Asansör Yukarı):** `M1` onayıyla birlikte asansör mekanizması ürünü yukarı taşır.
+5. **Transfer (Üst Piston İleri):** Asansör üst konuma ulaştığında üst piston devreye girerek parçayı transfer eder.
+6. **İkinci Adım Kaydı (`M2`) ve Evine Dönüş:** Üst piston hareketini tamamlayıp `M2` hafızasını aktif ettiğinde, asansör aşağı inerek sistemi başlangıç pozisyonuna döndürür.
 
 ---
 
